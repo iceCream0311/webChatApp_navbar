@@ -1,0 +1,24 @@
+<view class='header' style='padding-top:{{statusBarHeight}}px'>
+  <view class='bg' style='opacity:{{scrollTop / 400 > 1 ? 1 : scrollTop / 400}}'></view>
+  <view class='goback' style='background-image:url({{scrollTop / 400 > 0.5 ?"https://wwwoss.gfan.com/jsFront/images/jfWebChat/2019/circle_album/back_white.png":"https://wwwoss.gfan.com/jsFront/images/jfWebChat/2019/circle_album/back_black.png"}})'></view>
+</view>
+<!-- 内容区域 -->
+<view class='content' style='padding-top:{{statusBarHeight-0+44}}px'>
+
+  <view class="intro">自定义的导航条</view>
+  <view>
+    一、首先我们要设置自定义导航栏 ；在json文件中设置"navigationStyle": "custom"
+  </view>
+  <view>
+    二、获取导航条的高度，适配刘海屏；在app.js中获取状态栏高度，单位为px
+  </view>
+  <view>
+    三、实现图片的渐变
+    <view>
+      渐变的话我使用了bg这个盒子，由于可能是一个图片并且背景的不确定，所以写了个背景盒子，利用监听页面的滚动控制背景盒子的opcity来达到背景色的渐变；当然你的颜色固定也可以直接给header这个盒子背景的通过rgba来实现渐变
+    </view>
+
+  </view>
+
+
+</view>

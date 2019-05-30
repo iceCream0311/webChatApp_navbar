@@ -1,0 +1,41 @@
+
+
+.tite {
+  font-size: 32rpx;
+}
+
+view {
+  font-size: 26rpx;
+}
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 44px;
+  line-height: 44px;
+  padding-top: 20px;
+  font-size: 40rpx;
+  padding-left: 10px;
+  z-index: 9999;
+  }
+.header .goback {
+  display: inline-block;
+  width: 36rpx;
+  height:40px;
+  background: url(https://wwwoss.gfan.com/jsFront/images/jfWebChat/2019/circle_album/back_black.png) no-repeat left center;
+background-size: 36rpx 36rpx;  
+}
+.header .bg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00b4b4;
+  z-index: -1
+}
+.content{
+  height: 200vh;
+  padding: 40rpx 30rpx;
+}
